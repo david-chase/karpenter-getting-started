@@ -55,7 +55,7 @@ Set of scripts to provision a simple EKS cluster with Karpenter as your node aut
 
 8. Go to the AWS console and find your EKS cluster.  Click on it to see properties then click the "Compute" tab to see any nodes assigned to it.  Note that the first node created will be part of a managed node group, but any nodes that aren't in a node group were scaled out by Karpenter.
 
-9. Click on one of the Karpenter nodes, then click on Labels, and find the label karpenter/sh/capacity-type.  This will read either "on demand" or "spot".  Note that the instance type can be any one of many.  The allowable instance types are defined in nodepool.yaml.
+9. Click on one of the Karpenter nodes, then click on Labels, and find the label karpenter.sh/capacity-type.  This will read either "on demand" or "spot".  Note that the instance type can be any one of many.  The allowable instance types are defined in nodepool.yaml.
 
 <img src="https://i.imgur.com/74AtlHK.png" width=500>
 
