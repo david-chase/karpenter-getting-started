@@ -57,7 +57,7 @@ Set of scripts to provision a simple EKS cluster with Karpenter as your node aut
 
 9. Click on one of the Karpenter nodes, then click on Labels, and find the label karpenter/sh/capacity-type.  This will read either "on demand" or "spot".  Note that the instance type can be any one of many.  The allowable instance types are defined in nodepool.yaml.
 
-<img href="https://i.imgur.com/74AtlHK.png" width=500>
+<img src="https://i.imgur.com/74AtlHK.png" width=500>
 
 10. Scale your deployment back down and see what happens with the nodes by typing
         kubectl scale deploy php-apache -n testing --replicas=1
