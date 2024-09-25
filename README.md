@@ -59,6 +59,9 @@ Set of scripts to provision a simple EKS cluster with Karpenter as your node aut
 
 <a href="https://i.imgur.com/74AtlHK.png" width=500>
 
-10. Scale your deployment back down and see what happens with the nodes by typing "kubectl scale deploy php-apache -n testing --replicas=1"  After a few minutes you should start seeing the Karpenter.
+10. Scale your deployment back down and see what happens with the nodes by typing
+        kubectl scale deploy php-apache -n testing --replicas=1
+        
+    After a few minutes you should start seeing the Karpenter.
 
 11. When you've finished your testing, deprovision the resources by running destroy.ps1.  This will take several minutes.
